@@ -1,4 +1,10 @@
-.weather-img{
-    width: 500px;
-    height: 500px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
