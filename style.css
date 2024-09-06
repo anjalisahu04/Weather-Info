@@ -59,18 +59,21 @@ body{
     font-size: 1.5rem;
 }
 .location{
+    width: 100%;
     font-size: 1.9rem;
 }
 .weather{
     margin-top: 20px;
     font-size: 1.5rem;
     text-align: center;
+    width: 100%;
 }
 .image{
     width: 150px;
     height: 150px;
     text-align: center;
     margin-top: 20px;
+    margin-left: 20px;
 
 }
 .temprature{
