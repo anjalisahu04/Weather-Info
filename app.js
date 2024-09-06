@@ -10,7 +10,6 @@ const fetchWeatherData = async()=>{
         const url = `https://api.weatherapi.com/v1/current.json?key=${Key}&q=${city_val}`;
         let response =await fetch(url);
         let data = await response.json()
-        console.log(data);
         show.innerHTML = `
         <h2 class="location">${data.location.name}, ${data.location.region}</h2>
         <h3 class = "weather">${data.current.condition.text}</h3>
@@ -24,12 +23,8 @@ const fetchWeatherData = async()=>{
             <div> 
                 <h4 class = "title">Wind Speed</h4>
                 <h4 class = "temp">${data.current.wind_kph}</h4>
-
-
             </div>       
         </div> `   
-        
-
     }    
 }
 search_btn.addEventListener('click',fetchWeatherData);
